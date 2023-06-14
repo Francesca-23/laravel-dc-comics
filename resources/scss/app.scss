@@ -28,3 +28,12 @@ ul {
         height: 25rem;
     }
 }
+
+.container-form-card {
+    background-color: rgba($color: #1c1c1c, $alpha: 0.8);
+    color: rgba(255, 255, 255, 0.9);
+
+    .form-group {
+        padding-bottom: 1rem;
+    }
+}

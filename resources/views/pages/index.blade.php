@@ -33,7 +33,9 @@
     </div>
 
     <div class="center">
-        <span class="load-more">LOAD MORE</span>
+        <a href="{{ route( 'comics.create') }}">
+            <span class="load-more">ADD CARD</span>
+        </a>
     </div>
 
 </div>
