@@ -23,7 +23,10 @@
         @foreach($comics as $elem)  
             <div class=" comic-card">  
                 <img src="{{ $elem['thumb'] }}" alt="comics">
-                <p>{{ $elem['series'] }} </p>   
+
+                <a href="{{ route( 'comics.show', ['comic' => $elem->id] ) }}">
+                    <p>{{ $elem['series'] }} </p>   
+                </a>
             </div> 
         @endforeach
          

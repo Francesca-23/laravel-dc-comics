@@ -48,11 +48,15 @@
                 object-position: top;
             }
 
-            p {
-                text-transform: uppercase;
-                color: rgba($color: #ffffff, $alpha: 0.8);
-                font-size: 0.7rem;
-                margin-top: 5px;
+            a {
+                text-decoration: none;
+
+                p {
+                    text-transform: uppercase;
+                    color: rgba($color: #ffffff, $alpha: 0.8);
+                    font-size: 0.7rem;
+                    margin-top: 5px;
+                }
             }
         }
     }
