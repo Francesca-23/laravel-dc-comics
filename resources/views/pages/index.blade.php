@@ -27,6 +27,7 @@
                 <a href="{{ route( 'comics.show', ['comic' => $elem->id] ) }}">
                     <p>{{ $elem['series'] }} </p>   
                 </a>
+                <a class="btn btn-primary button-modifica" href="{{route('comics.edit', $elem)}}" >Modifica</a>
             </div> 
         @endforeach
          
