@@ -18,6 +18,11 @@
                 <p><strong>Serie:</strong> {{ $comic->series }}</p>
                 <p><strong>Tipologia:</strong> {{ $comic->type }}</p>
                 <p><strong>Prezzo:</strong> {{ $comic->price }}</p>
+                <form action="{{route('comics.destroy', $comic)}}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-danger button-modifica mb-3">Elimina</button>
+                </form>
             </div>
         </div>
     </div>
