@@ -15,7 +15,10 @@
     
                 <div class="form-group">
                     <label for="title-comic" class="form-label">Titolo</label>
-                    <input type="text" id="title-comic" name="title" class="form-control">
+                    <input class="@error('title') is-invalid @enderror" type="text" id="title-comic" name="title" class="form-control">
+                    @error('title')
+                        <div class="alert alert-danger">{{$message}}</div>
+                    @enderror
                 </div>
     
                 <div class="form-group">
