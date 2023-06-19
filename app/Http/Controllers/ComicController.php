@@ -38,11 +38,11 @@ class ComicController extends Controller
     {
         $request->validate(
             [
-                'title'=>'required'|'max:20'|'unique:comics',
-                'description'=>'required'|'max:100',
+                'title'=>'required|max:20|unique:comics',
+                'description'=>'required|max:100',
                 'thumb'=>'required',
                 'price'=>'required',
-                'series'=>'required'|'max:30',
+                'series'=>'required|max:30',
                 'type'=>'required',
             ],
             [
